@@ -62,6 +62,7 @@ class Route
                 }
 
                 $message = $event->getMessage();
+
                 if (!($message instanceof TextMessageContent)) {
                     $logger->info('Non text message has come');
                     continue;
